@@ -2,27 +2,25 @@ package onboard;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Arrays;
+import java.util.Collections;
+
+
 
 public class Problem3 {
     public static List<Integer> solution(List<Integer> numbers){
         List<Integer> answer = new ArrayList<>();
 
         int sum=0;
-        int a=0;
-        int arr[] = new int[5];
 
         for(int i=0;i<5;i++) {
-            a = numbers.get(i);
-            arr[i] = a;
-            sum += a;
+            sum += numbers.get(i);
         }
-
         int avg = sum/5;
+        int mid = numbers.get(2);
 
-        Arrays.sort(arr);
-        answer.set(0, avg);
-        answer.set(1, arr[2]);
+        Collections.sort(numbers);
+        answer.add(avg);
+        answer.add(mid)
 
         return answer;
     }
