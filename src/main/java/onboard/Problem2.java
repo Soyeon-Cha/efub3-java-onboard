@@ -12,7 +12,7 @@ public class Problem2 {
             int a = flipCards[i][0];
             int b = flipCards[i][1];
             for (int j=a; j<(b+1); j++){
-                int c = answer[a+b-j];
+                int c = a+b-j;
                 middle[j] = answer[c];
             }
             answer=middle; // answer에 한 줄 시행 결과 저장
