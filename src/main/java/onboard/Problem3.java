@@ -22,7 +22,7 @@ public class Problem3 {
 
         Arrays.sort(arr);
         answer.set(0, avg);
-        answer.set(2, arr[2]);
+        answer.set(1, arr[2]);
 
         return answer;
     }
