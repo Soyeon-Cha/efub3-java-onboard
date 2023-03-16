@@ -22,7 +22,7 @@ public class Problem3 {
         int mid = numbers.get(2);
         
         answer.add(avg);
-        answer.add(mid)
+        answer.add(mid);
 
         return answer;
     }
