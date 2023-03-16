@@ -23,5 +23,6 @@ public class Problem1 {
         answer.add(0, hour);
         answer.add(1, minute);
 
+        return answer;
     }
 }
