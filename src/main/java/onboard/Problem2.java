@@ -10,11 +10,10 @@ public class Problem2 {
         for(int i=0; i<10; i++) {
             int a = flipCards[i][0];
             int b = flipCards[i][1];
-            for (int j=(a-1); j<b; j++){
-                int c = a+b-2-j;
+            for (int j=(a-1); j<((a+b-2)/2); j++){
                 int temp = answer[j];
-                answer[j] = answer[c];
-                answer[c] = temp;
+                answer[j] = answer[(a+b-2-j)];
+                answer[(a+b-2-j)] = temp;
             }
         }
         return answer;
