@@ -11,8 +11,8 @@ public class Problem2 {
         for(int i=0; i<10; i++) {
             int a = flipCards[i][0];
             int b = flipCards[i][1];
-            for (int j=a; j<(b+1); j++){
-                int c = a+b-j;
+            for (int j=(a-1); j<b; j++){
+                int c = a+b-2-j;
                 middle[j] = answer[c];
             }
             answer=middle; // answer에 한 줄 시행 결과 저장
