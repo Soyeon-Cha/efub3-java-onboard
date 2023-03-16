@@ -16,10 +16,11 @@ public class Problem3 {
             sum += numbers.get(i);
         }
         int avg = sum/5;
+        int mid = numbers.get(2);
 
         Collections.sort(numbers);
-        answer.set(0, avg);
-        answer.set(1, numbers.get(2));
+        answer.add(avg);
+        answer.add(mid)
 
         return answer;
     }
