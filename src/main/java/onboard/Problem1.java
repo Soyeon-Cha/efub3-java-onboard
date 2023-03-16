@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Problem1 {
     public static List<Integer> solution(Integer hour, Integer minute){
+        List<Integer> answer = new ArrayList<>();
+
         if (minute>=45) {
             minute -= 45;
         }
@@ -17,7 +19,9 @@ public class Problem1 {
             }
             minute=minute+15;
         }
-        List<Integer> answer = new ArrayList<>();
-        return answer;
+
+        answer.add(0, hour);
+        answer.add(1, minute);
+
     }
 }
